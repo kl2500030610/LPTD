@@ -1,16 +1,179 @@
-# React + Vite
+<p align="center">
+  <img src="assets/Screenshot 2026-02-27 100408.png" width="600">
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Learning Progress Dashboard
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Overview
 
-## React Compiler
+The Learning Progress Dashboard is a Single Page Application (SPA) designed to track and visualize student or user learning progress across multiple modules and activities.  
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+The project focuses on derived state calculations, dynamic visualizations, controlled interactions, asynchronous updates, and performance-aware component design. It demonstrates how to build a scalable and accessible dashboard system for monitoring learning metrics in a modern frontend architecture.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Objectives
+
+This project aims to:
+
+- Implement a component-based architecture for dashboard systems
+- Demonstrate derived state computation for performance metrics
+- Handle controlled inputs for filtering and module selection
+- Simulate asynchronous progress updates
+- Provide route-based navigation for multiple learning categories
+- Ensure accessibility and keyboard-friendly interactions
+- Optimize rendering for dynamic visualizations in a performance-sensitive SPA
+
+---
+
+## Architecture Highlights
+
+### Component-Based Design
+
+The application is structured using reusable UI components such as:
+
+- Progress Indicators
+- Charts and Graphs
+- Summary Cards
+- Module Lists
+- Filter Controls
+
+Each component is designed for reusability, separation of concerns, and scalability.
+
+---
+
+### State Management Strategy
+
+- Local state is managed using React Hooks.
+- Derived state is calculated dynamically (e.g., completion percentage, average completion time).
+- Global or shared state (if applicable) is managed through Context API.
+- Controlled components are used for all form inputs and filtering controls.
+
+---
+
+### Routing
+
+The application uses client-side routing to provide:
+
+- Category-based learning views
+- Module-specific progress pages
+- Summary and analytics views
+
+Routing enables seamless navigation without full page reloads.
+
+---
+
+### Derived Metrics
+
+The dashboard calculates:
+
+- Module completion percentage
+- Overall course completion
+- Average completion time
+- Activity-based performance summaries
+
+All metrics are computed from base state values to ensure consistency and maintainability.
+
+---
+
+### Asynchronous Behavior
+
+The system simulates:
+
+- Module completion updates
+- Progress tracking events
+- Delayed updates to mimic real-world API calls
+
+This demonstrates handling of asynchronous logic within UI components.
+
+---
+
+### Performance Considerations
+
+- Efficient re-rendering using memoization where necessary
+- Derived state instead of redundant storage
+- Optimized visualization updates
+- Scalable structure for large module datasets
+
+---
+
+### Accessibility
+
+The dashboard follows accessibility best practices:
+
+- Proper semantic HTML structure
+- ARIA labels for charts and interactive elements
+- Keyboard navigability
+- Focus management
+- Screen-reader friendly components
+
+---
+
+## Major Features
+
+- Dashboard view with overall and module-wise progress
+- Reusable visualization components
+- Controlled filtering and module selection
+- Route-based navigation across learning categories
+- Async simulation of progress updates
+- Derived metrics for analytics and summaries
+- Accessible and keyboard-friendly UI
+
+---
+
+## Technology Stack
+
+- React (Functional Components & Hooks)
+- React Router (Client-side Routing)
+- Context API (if implemented)
+- Vite (Build Tool)
+- Modern CSS / Utility-first styling
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Deploy (if configured):
+
+```bash
+npm run deploy
+```
+
+---
+
+## Educational Value
+
+This project demonstrates practical implementation of:
+
+- Derived state calculations
+- Dynamic UI updates
+- Performance-aware component design
+- Accessible visualization
+- Scalable dashboard architecture
+
+It is designed as an academic project to strengthen understanding of modern SPA development patterns.
